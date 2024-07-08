@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create Student</h1>
+<form action="{{ url_for('create_student') }}" method="post">
+    <label for="first_name">First Name:</label><br>
+    <input type="text" id="first_name" name="first_name"><br>
+    <label for="last_name">Last Name:</label><br>
+    <input type="text" id="last_name" name="last_name"><br>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br>
+    <label for="amount_due">Amount Due:</label><br>
+    <input type="number" id="amount_due" name="amount_due"><br><br>
+    <input type="submit" value="Create">
+</form>
+{% endblock %}
